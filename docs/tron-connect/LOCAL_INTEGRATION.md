@@ -63,6 +63,17 @@ If you only have static build output and want SPA routes to load (no Node):
 python3 scripts/serve_spa.py dist --port 3000
 ```
 
+No-Node quick start (front + admin + mock api together):
+
+```bash
+bash scripts/run_local_preview.sh
+```
+
+URLs:
+- `http://localhost:3000` (front)
+- `http://localhost:3002` (admin)
+- `http://localhost:3010/healthz` (mock api)
+
 ## Production note
 
 - No standalone `tron-connect` UI is exposed.

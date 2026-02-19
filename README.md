@@ -97,6 +97,12 @@ python3 scripts/serve_spa.py dist-front --port 3000
 python3 scripts/serve_spa.py dist-admin --port 3002
 ```
 
+No-Node local preview (front + admin + mock API):
+
+```bash
+bash scripts/run_local_preview.sh
+```
+
 ---
 
 ## Deployment
