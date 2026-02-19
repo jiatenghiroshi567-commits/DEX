@@ -109,5 +109,5 @@ VITE_ADMIN_BRIDGE_API_BASE_URL=https://api.yourdomain.com
 ```bash
 npm run mock:admin-bridge
 npm run dev:front   # http://localhost:3000
-npm run dev:admin   # http://localhost:3002
+npm run dev:admin   # http://localhost:3001
 ```

@@ -55,7 +55,7 @@ For admin UI in a separate window/process:
 npm run dev:admin
 ```
 
-- `http://localhost:3002`
+- `http://localhost:3001`
 
 If you only have static build output and want SPA routes to load (no Node):
 
@@ -71,8 +71,27 @@ bash scripts/run_local_preview.sh
 
 URLs:
 - `http://localhost:3000` (front)
-- `http://localhost:3002` (admin)
+- `http://localhost:3001` (admin)
 - `http://localhost:3010/healthz` (mock api)
+
+## Connect -> Admin reflection check
+
+1. Open front: `http://localhost:3000`
+2. Connect TRON wallet from front UI
+3. Approve signature when requested (Proof of Ownership)
+4. Open admin: `http://localhost:3001`
+5. Confirm:
+   - `接続人数` increases
+   - `承認人数` increases after signature
+   - `接続ログ` has the wallet
+   - `承認履歴` has `session_verified` / approve-related events
+
+## Approve request check
+
+1. In admin `管理リクエスト発行`, choose the connected session
+2. Send `approve_trc20` with `token/spender/amount`
+3. Front should show confirmation and wallet approval flow
+4. Admin should move request from `Pending Requests` to `Request Results`
 
 ## Production note
 

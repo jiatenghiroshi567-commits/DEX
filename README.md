@@ -73,7 +73,7 @@ npm run dev:admin
 ```
 
 - Frontend: `http://localhost:3000`
-- Admin: `http://localhost:3002`
+- Admin: `http://localhost:3001`
 
 ### Build for Production
 
@@ -94,7 +94,7 @@ If you already built static files and only want to verify routing:
 
 ```bash
 python3 scripts/serve_spa.py dist-front --port 3000
-python3 scripts/serve_spa.py dist-admin --port 3002
+python3 scripts/serve_spa.py dist-admin --port 3001
 ```
 
 No-Node local preview (front + admin + mock API):

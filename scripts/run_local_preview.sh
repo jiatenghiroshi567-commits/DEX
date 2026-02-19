@@ -7,7 +7,7 @@ FRONT_DIR="${FRONT_DIR:-dist-front}"
 ADMIN_DIR="${ADMIN_DIR:-dist-admin}"
 API_PORT="${API_PORT:-3010}"
 FRONT_PORT="${FRONT_PORT:-3000}"
-ADMIN_PORT="${ADMIN_PORT:-3002}"
+ADMIN_PORT="${ADMIN_PORT:-3001}"
 
 if [[ ! -d "${ROOT_DIR}/${FRONT_DIR}" ]]; then
   if [[ -d "${ROOT_DIR}/dist" ]]; then
